@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import TabulkaHlasu from './components/TabulkaHlasu';
+import Tabulka1Kraj from './components/Tabulka1Kraj';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TabulkaHlasu />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('tabulkaHlasu')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(
+  <React.StrictMode>
+    <Tabulka1Kraj />
+  </React.StrictMode>,
+  document.getElementById('tabulka1Kraj')
+);
